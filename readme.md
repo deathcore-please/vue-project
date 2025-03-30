@@ -13,7 +13,7 @@ This is how the my Events page looks like:
 ![image](https://github.com/user-attachments/assets/2d0ef6a1-b3d1-40a5-882b-b6a3427caa7a)
 
 
-The location displays the area the event occurred in, and all of the parent areas above it in the chain. Each area in the areas chain in location is separated by a " > " symbol. The event type is displayed as a coloured label with green if access authorised, or red is access is denied for any reason. Date time is displayed in DD/MM/YYYY HH:MM:SS format, and must be sorted with the newest events first.
+The location displays the area the event occurred in, and all of the parent areas above it in the chain. Each area in the areas chain in location is separated by a " > " symbol. The event type is displayed as a coloured label with green if access authorised, or red is access is denied for any reason. Date time is displayed in DD/MM/YYYY HH:MM:SS format, and is sorted with the newest events first.
 
 The task took me a few hours (about 3-4 hours) of solid sitting to complete, since I had to learn vue from scratch and draw parallels to my knowledge of API integration from a Python-DJango framework to a .Net 
 framework. COming from an ML background, this was an extemely interesting task to complete, and it really helped me get a working knowledge of how frontend and backend work, how WebAPIs are hosted, how to use API 
