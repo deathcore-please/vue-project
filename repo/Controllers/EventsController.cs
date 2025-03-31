@@ -6,16 +6,16 @@ using System.Linq;
 
 namespace CameKmsStarter.Controllers
 {
-    [ApiController]
+    [ApiController] //API Controller Class
     [Route("api/[controller]")]
     public class EventsController : ControllerBase
     {
-        private readonly string _connectionString = @"Data Source=C:\Users\HP\Desktop\Everything Else\Python Projects\vue-project\repo\Database\events.db";
+        private readonly string _connectionString = @"Data Source=C:\Users\HP\Desktop\Everything Else\Python Projects\vue-project\repo\Database\events.db";  //path to events.db for later use
 
         [HttpGet]
-        public IActionResult GetEvents()
+        public IActionResult GetEvents() //returns "sorted", a list of sorted events with corresponding attributes
         {
-            var events = new List<EventDto>();
+            var events = new List<EventDto>();    //variable class storing attributes such as eventid, datetime, etc
 
             try
             {
@@ -38,18 +38,18 @@ namespace CameKmsStarter.Controllers
                                 FobCode = reader.GetString(3),
                                 Type = reader.GetString(4)
                             };
-                            events.Add(ev);
+                            events.Add(ev);   //adds values to each eventdto in the list
                         }
                     }
 
                     foreach (var ev in events)
                     {
-                        ev.Location = BuildLocationPath(ev.AreaId, connection);
+                        ev.Location = BuildLocationPath(ev.AreaId, connection);  //makes the location string using the areaid attribute
                     }
                 }
 
                 var sorted = events.OrderByDescending(e => e.DateTime).ToList();
-                return Ok(sorted);
+                return Ok(sorted);  //returns sorted NOT events
             }
             catch (Exception ex)
             {
@@ -57,7 +57,7 @@ namespace CameKmsStarter.Controllers
             }
         }
 
-        private string BuildLocationPath(int areaId, SqliteConnection connection)
+        private string BuildLocationPath(int areaId, SqliteConnection connection) //returns a string (location attribute as mentioned in problem statement)
         {
             var path = new List<string>();
             int? currentId = areaId;
@@ -83,7 +83,7 @@ namespace CameKmsStarter.Controllers
         }
     }
 
-    public class EventDto
+    public class EventDto   //data transfer object (whatever that means) gets stored in a list to send to the frontend as json
     {
         public int EventId { get; set; }
         public DateTime DateTime { get; set; }
