@@ -1,6 +1,6 @@
-# INTERVIEW TASK
+# INTERVIEW TASK - Learned how to use .Net and VUE!
 
-Create a vue new page to display the events stored in the SQLite database in the database folder of the project file. There must be the following columns:
+I create a vue new page to display the events stored in the SQLite database in the database folder of the project file. It has the following columns:
 
 - Event Id
 - Date Time
@@ -8,10 +8,15 @@ Create a vue new page to display the events stored in the SQLite database in the
 - Location
 - Fob Code
 
-The location must display the area the event occurred in, and all of the parent areas above it in the chain. Each area in the areas chain in location must be separated by a " > " symbol. The event type must be displayed as a coloured label with green if access authorised, or red is access is denied for any reason. Date time must be displayed in DD/MM/YYYY HH:MM:SS format, and must be sorted with the newest events first. #
+This is how the my Events page looks like:
 
-Attached above is a Zip File containing all of the information that you will need to complete the task. We have also attached a screenshot of what it should roughly look like completed.
+![image](https://github.com/user-attachments/assets/2d0ef6a1-b3d1-40a5-882b-b6a3427caa7a)
 
-We do not envisage the task to take more than a couple of hours of your time. If you have any issues setting up the environment on your computer, Oliver will be more than happy to assist you with this.
 
-I would be grateful if you could confirm receipt of this email and the task information, once again please do not hesitate to contact us if you have any questions at all.
+The location displays the area the event occurred in, and all of the parent areas above it in the chain. Each area in the areas chain in location is separated by a " > " symbol. The event type is displayed as a coloured label with green if access authorised, or red is access is denied for any reason. Date time is displayed in DD/MM/YYYY HH:MM:SS format, and is sorted with the newest events first.
+
+The task took me a few hours (about 3-4 hours) of solid sitting to complete, since I had to learn vue from scratch and draw parallels to my knowledge of API integration from a Python-DJango framework to a .Net 
+framework. Coming from an ML background, this was an extemely interesting task to complete, and it really helped me get a working knowledge of how frontend and backend work, how WebAPIs are hosted, how to use API 
+endpoints, and most importantly, how to troubleshoot while using an API endpoint for frontend.
+
+While I did use ChatGPT for this task, its role was limited to function implementation such that I had an understanding of the project at a functional level making it far easier for me to understand and debug the code. 
