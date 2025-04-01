@@ -10,7 +10,7 @@ namespace CameKmsStarter.Controllers
     [Route("api/[controller]")]
     public class EventsController : ControllerBase
     {
-        private readonly string _connectionString = @"Data Source=C:\Users\HP\Desktop\Everything Else\Python Projects\vue-project\repo\Database\events.db";  //path to events.db for later use
+        private readonly string _connectionString = @"Data Source=C:\Users\HP\Desktop\Everything Else\Python Projects\vue-project\repo\Database\events.db";  //change this as per your machine
 
         [HttpGet]
         public IActionResult GetEvents() //returns "sorted", a list of sorted events with corresponding attributes
