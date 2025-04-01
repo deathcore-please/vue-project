@@ -32,8 +32,8 @@ While I did use **ChatGPT** for this task, its role was limited to function impl
 ### Step 1: Clone the Repository
 First, clone the project from the repository to your local machine:
 ```bash
-git clone https://github.com/your-repo/CameKmsStarter.git
-cd CameKmsStarter
+git clone https://github.com/deathcore-please/vue-project.git
+cd repo
 ```
 
 ### Step 2: Install .NET SDK
@@ -108,6 +108,3 @@ Navigate to the **Events page** to see the data displayed as required.
 ```
 http://localhost:5000/api/events
 ```
-
-## 📧 Support:
-If you have any questions or run into issues, feel free to reach out to me!
