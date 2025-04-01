@@ -18,7 +18,7 @@ The **location** displays the area the event occurred in, and all of the parent 
 
 The **Date Time** is displayed in **DD/MM/YYYY HH:MM:SS** format and is **sorted with the newest events first**.
 
-## 🕰️ Time Taken:
+## 
 The task took me a few hours (about **3-4 hours**) of solid sitting to complete since I had to learn **Vue** from scratch and draw parallels to my knowledge of **API integration** from a **Python-Django framework** to a **.NET framework**. 
 
 Coming from an **ML background**, this was an extremely interesting task to complete, and it really helped me get a **working knowledge** of how the frontend and backend work, how **WebAPIs** are hosted, how to use **API endpoints**, and most importantly, how to **troubleshoot** while using an API endpoint for the frontend.
